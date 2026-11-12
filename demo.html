@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سمارت كاشير | طلب عرض تجريبي</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- شريط التنقل العلوي -->
+    <header>
+        <div class="logo">
+            <h1>سمارت كاشير</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="products.html">المنتجات</a></li>
+                <li><a href="pricing.html">الباقات والأسعار</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+                <li><a href="demo.html" class="btn-demo" style="background-color: #c0392b;">طلب عرض تجريبي</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- قسم طلب العرض التجريبي -->
+    <section class="demo-section">
+        <div class="section-title">
+            <h2>اطلب عرضاً تجريبياً الآن</h2>
+            <p>املأ النموذج أدناه وسيقوم فريقنا بالتواصل معك لتحديد موعد لتجربة النظام.</p>
+        </div>
+
+        <div class="demo-container">
+            <form action="#" method="POST" class="demo-form">
+                <div class="form-group">
+                    <label for="name">الاسم الكامل:</label>
+                    <input type="text" id="name" name="name" placeholder="أدخل اسمك الثلاثي" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">رقم الهاتف:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="أدخل رقم هاتفك للتواصل" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">الخدمة المطلوبة:</label>
+                    <select id="service" name="service" required>
+                        <option value="">-- اختر الخدمة أو الباقة --</option>
+                        <option value="basic">الباقة الأساسية (99$)</option>
+                        <option value="pro">الباقة الاحترافية (199$)</option>
+                        <option value="enterprise">باقة الشركات (399$)</option>
+                        <option value="hardware">أجهزة الكاشير وملحقاتها</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">ملاحظات إضافية:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="هل لديك أي استفسارات أو متطلبات خاصة بنشاطك التجاري؟"></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary btn-submit">إرسال الطلب</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <p>تصميم وتطوير: مجموعة كود كرو (عمر صبري - محمد باقرين) &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
