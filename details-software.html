@@ -3,38 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سمارت كاشير | تفاصيل برنامج المبيعات</title>
+    <title>سمارت كاشير | تفاصيل البرنامج</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="top">
 
     <header>
-        <div class="logo"><h1>سمارت كاشير</h1></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="products.html" class="active">المنتجات</a></li>
-                <li><a href="pricing.html">الباقات والأسعار</a></li>
-                <li><a href="about.html">من نحن</a></li>
-                <li><a href="contact.html">اتصل بنا</a></li>
-                <li><a href="demo.html" class="btn-demo">طلب عرض تجريبي</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <a class="logo" href="index.html"><span class="logo-icon">🧾</span><h1>سمارت كاشير</h1></a>
+            <input type="checkbox" id="menu-btn" class="sr" aria-label="فتح القائمة">
+            <label for="menu-btn" class="menu-toggle">☰</label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html" class="active">المنتجات</a></li>
+                    <li><a href="pricing.html">الباقات والأسعار</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li><a href="demo.html" class="btn-demo">طلب عرض تجريبي</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="product-details-section">
-        <div class="details-container">
-            <div class="product-image-large" style="background-color: transparent; border: none;">
-                <img src="images/pos-software.jpg.jpg" alt="برنامج سمارت كاشير" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 8px;">
-            </div>
-
+    <main id="main" class="container">
+        <p class="breadcrumb"><a href="index.html">الرئيسية</a> › <a href="products.html">المنتجات</a> › البرنامج</p>
+        <section class="details-container">
+            <div class="product-image-large"><img src="images/pos-software.jpg" alt="برنامج سمارت كاشير"></div>
             <div class="product-info">
                 <h2>برنامج سمارت كاشير (نسخة المحلات)</h2>
                 <div class="price-tag">200$</div>
-                <p class="description">
-                    برنامج متكامل وسهل الاستخدام لإدارة المبيعات والمخزون. يتضمن واجهة مستخدم عصرية (Dashboard)، تقارير أرباح مفصلة، ودعماً كاملاً لضريبة القيمة المضافة (VAT)، مع إمكانية إدارة الصلاحيات للموظفين.
-                </p>
-
+                <p class="description">برنامج متكامل وسهل الاستخدام لإدارة المبيعات والمخزون. يتضمن واجهة مستخدم عصرية (Dashboard)، تقارير أرباح مفصلة، ودعماً كاملاً لضريبة القيمة المضافة (VAT)، مع إمكانية إدارة الصلاحيات للموظفين.</p>
                 <h3>المواصفات التقنية:</h3>
                 <ul class="specs-list">
                     <li><strong>الترخيص:</strong> ترخيص مدى الحياة (بدون اشتراكات شهرية)</li>
@@ -43,17 +43,28 @@
                     <li><strong>الضرائب:</strong> متوافق مع نظام الفوترة الإلكترونية وضريبة القيمة المضافة</li>
                     <li><strong>الصلاحيات:</strong> نظام مستخدمين متعدد (مدير نظام، كاشير، محاسب)</li>
                 </ul>
-
                 <div class="action-buttons">
                     <a href="demo.html" class="btn-primary">اطلب البرنامج الآن</a>
                     <a href="contact.html" class="btn-outline">استفسر عن البرنامج</a>
                 </div>
             </div>
+        </section>
+        <div class="related">
+            <h3>منتجات مرتبطة</h3>
+            <div class="action-buttons"><a class="btn-outline btn-sm" href="details-pos.html">جهاز الكاشير</a><a class="btn-outline btn-sm" href="details-printer.html">طابعة فواتير</a><a class="btn-outline btn-sm" href="details-scanner.html">قارئ باركود</a></div>
         </div>
-    </section>
+    </main>
+
+    <a class="whatsapp" href="https://wa.me/967779375534" target="_blank" rel="noopener" aria-label="واتساب">💬</a>
+    <a class="to-top" href="#top" aria-label="للأعلى">↑</a>
 
     <footer>
-        <p>تصميم وتطوير: مجموعة كود كرو (عمر صبري - محمد باقرين) &copy; 2026</p>
+        <div class="footer-grid">
+            <div><h4>🧾 سمارت كاشير</h4><p>حلول نقاط بيع متكاملة: أجهزة، طابعات، وبرمجيات مع التركيب والتدريب والدعم الفني.</p></div>
+            <div><h4>روابط سريعة</h4><ul><li><a href="index.html">الرئيسية</a></li><li><a href="products.html">المنتجات</a></li><li><a href="pricing.html">الباقات والأسعار</a></li><li><a href="about.html">من نحن</a></li><li><a href="contact.html">اتصل بنا</a></li></ul></div>
+            <div><h4>تواصل معنا</h4><ul><li>📍 تريم، حضرموت</li><li>📞 779375534 - 770206672</li><li>✉️ info@smartcashier.com</li></ul></div>
+        </div>
+        <div class="copyright">تصميم وتطوير: مجموعة كود كرو (عمر صبري - محمد باقرين) &copy; 2026</div>
     </footer>
 
 </body>

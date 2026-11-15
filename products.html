@@ -4,71 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سمارت كاشير | المنتجات</title>
+    <meta name="description" content="أجهزة الكاشير والطابعات وقارئات الباركود وبرنامج سمارت كاشير.">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="top">
 
-    <!-- شريط التنقل العلوي -->
     <header>
-        <div class="logo">
-            <h1>سمارت كاشير</h1>
+        <div class="header-inner">
+            <a class="logo" href="index.html"><span class="logo-icon">🧾</span><h1>سمارت كاشير</h1></a>
+            <input type="checkbox" id="menu-btn" class="sr" aria-label="فتح القائمة">
+            <label for="menu-btn" class="menu-toggle">☰</label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html" class="active">المنتجات</a></li>
+                    <li><a href="pricing.html">الباقات والأسعار</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li><a href="demo.html" class="btn-demo">طلب عرض تجريبي</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="products.html" class="active">المنتجات</a></li>
-                <li><a href="pricing.html">الباقات والأسعار</a></li>
-                <li><a href="about.html">من نحن</a></li>
-                <li><a href="contact.html">اتصل بنا</a></li>
-                <li><a href="demo.html" class="btn-demo">طلب عرض تجريبي</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- قسم المنتجات -->
-    <section class="products-section">
-        <div class="section-title">
+    <main id="main">
+        <div class="page-banner">
             <h2>منتجاتنا وخدماتنا</h2>
             <p>اختر من بين أفضل أجهزة نقاط البيع والبرامج التي تناسب احتياجات عملك.</p>
         </div>
 
-        <div class="product-grid">
-<!-- المنتج الأول -->
-<div class="product-card">
-<img src="images/pos-machine.jpg.jpg" alt="جهاز كاشير لمس" style="width: 100%; height: 180px; object-fit: contain; margin-bottom: 15px;">    <h3>جهاز كاشير متكامل (لمس)</h3>
-    <p>جهاز كاشير بشاشة لمس 15 بوصة مع نظام تشغيل سريع وسلس، مثالي للمطاعم والمحلات.</p>                <span class="price">450$</span>
-                <a href="details-pos.html" class="btn-outline">عرض التفاصيل</a>
-            </div>
+        <section class="section">
+            <div class="container">
+                <!-- الفلترة تعمل بـ CSS فقط عبر أزرار الراديو -->
+                <input type="radio" name="filter" id="f-all" class="sr" checked>
+                <input type="radio" name="filter" id="f-hw" class="sr">
+                <input type="radio" name="filter" id="f-sw" class="sr">
 
-            <!-- المنتج الثاني -->
-            <div class="product-card">
-<img src="images/printer.jpg.jpg" alt="طابعة فواتير" style="width: 100%; height: 180px; object-fit: contain; margin-bottom: 15px;">                <h3>طابعة فواتير حرارية</h3>
-                <p>طابعة فواتير سريعة جداً مع خاصية القص الآلي للورق، تدعم التوصيل عبر USB و الشبكة.</p>
-                <span class="price">120$</span>
-                <a href="details-printer.html" class="btn-outline">عرض التفاصيل</a>
-            </div>
+                <div class="filters">
+                    <label class="filter-btn" for="f-all">الكل</label>
+                    <label class="filter-btn" for="f-hw">الأجهزة</label>
+                    <label class="filter-btn" for="f-sw">البرمجيات</label>
+                </div>
 
-            <!-- المنتج الثالث -->
-            <div class="product-card">
-<img src="images/barcode-scanner.jpg.jpg" alt="قارئ باركود" style="width: 100%; height: 180px; object-fit: contain; margin-bottom: 15px;">                <h3>قارئ باركود لاسلكي</h3>
-                <p>قارئ باركود سريع الاستجابة يدعم الرموز ثنائية الأبعاد (QR) مع بطارية تدوم طويلاً.</p>
-                <span class="price">85$</span>
-                <a href="details-scanner.html" class="btn-outline">عرض التفاصيل</a>
-            </div>
+                <div class="product-grid">
+                    <article class="product-card" data-cat="hardware">
+                        <span class="cat">أجهزة</span>
+                        <div class="thumb"><img src="images/pos-machine.jpg" alt="جهاز كاشير لمس"></div>
+                        <h3>جهاز كاشير متكامل (لمس)</h3>
+                        <p>جهاز كاشير بشاشة لمس 15 بوصة مع نظام تشغيل سريع وسلس، مثالي للمطاعم والمحلات.</p>
+                        <span class="price">450$</span>
+                        <div class="card-actions">
+                            <a href="demo.html" class="btn-primary btn-sm">اطلب الآن</a>
+                            <a href="details-pos.html" class="btn-outline btn-sm">التفاصيل</a>
+                        </div>
+                    </article>
 
-            <!-- المنتج الرابع -->
-            <div class="product-card">
-<img src="images/pos-software.jpg.jpg" alt="برنامج كاشير" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">                <h3>برنامج سمارت كاشير (نسخة المحلات)</h3>
-                <p>برنامج إدارة مبيعات متكامل، يشمل إدارة المخزون، تقارير الأرباح، ودعم ضريبة القيمة المضافة.</p>
-                <span class="price">200$</span>
-                <a href="details-software.html" class="btn-outline">عرض التفاصيل</a>
-            </div>
-        </div>
-    </section>
+                    <article class="product-card" data-cat="hardware">
+                        <span class="cat">أجهزة</span>
+                        <div class="thumb"><img src="images/printer.jpg" alt="طابعة فواتير"></div>
+                        <h3>طابعة فواتير حرارية</h3>
+                        <p>طابعة فواتير سريعة جداً مع خاصية القص الآلي للورق، تدعم التوصيل عبر USB والشبكة.</p>
+                        <span class="price">120$</span>
+                        <div class="card-actions">
+                            <a href="demo.html" class="btn-primary btn-sm">اطلب الآن</a>
+                            <a href="details-printer.html" class="btn-outline btn-sm">التفاصيل</a>
+                        </div>
+                    </article>
 
-    <!-- تذييل الصفحة -->
+                    <article class="product-card" data-cat="hardware">
+                        <span class="cat">أجهزة</span>
+                        <div class="thumb"><img src="images/barcode-scanner.jpg" alt="قارئ باركود"></div>
+                        <h3>قارئ باركود لاسلكي</h3>
+                        <p>قارئ باركود سريع الاستجابة يدعم الرموز ثنائية الأبعاد (QR) مع بطارية تدوم طويلاً.</p>
+                        <span class="price">85$</span>
+                        <div class="card-actions">
+                            <a href="demo.html" class="btn-primary btn-sm">اطلب الآن</a>
+                            <a href="details-scanner.html" class="btn-outline btn-sm">التفاصيل</a>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-cat="software">
+                        <span class="cat">برمجيات</span>
+                        <div class="thumb"><img src="images/pos-software.jpg" alt="برنامج كاشير"></div>
+                        <h3>برنامج سمارت كاشير (نسخة المحلات)</h3>
+                        <p>برنامج إدارة مبيعات متكامل، يشمل إدارة المخزون، تقارير الأرباح، ودعم ضريبة القيمة المضافة.</p>
+                        <span class="price">200$</span>
+                        <div class="card-actions">
+                            <a href="demo.html" class="btn-primary btn-sm">اطلب الآن</a>
+                            <a href="details-software.html" class="btn-outline btn-sm">التفاصيل</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a class="whatsapp" href="https://wa.me/967779375534" target="_blank" rel="noopener" aria-label="واتساب">💬</a>
+    <a class="to-top" href="#top" aria-label="للأعلى">↑</a>
+
     <footer>
-        <p>تصميم وتطوير: مجموعة كود كرو (عمر صبري - محمد باقرين) &copy; 2026</p>
+        <div class="footer-grid">
+            <div><h4>🧾 سمارت كاشير</h4><p>حلول نقاط بيع متكاملة: أجهزة، طابعات، وبرمجيات مع التركيب والتدريب والدعم الفني.</p></div>
+            <div><h4>روابط سريعة</h4><ul><li><a href="index.html">الرئيسية</a></li><li><a href="products.html">المنتجات</a></li><li><a href="pricing.html">الباقات والأسعار</a></li><li><a href="about.html">من نحن</a></li><li><a href="contact.html">اتصل بنا</a></li></ul></div>
+            <div><h4>تواصل معنا</h4><ul><li>📍 تريم، حضرموت</li><li>📞 779375534 - 770206672</li><li>✉️ info@smartcashier.com</li></ul></div>
+        </div>
+        <div class="copyright">تصميم وتطوير: مجموعة كود كرو (عمر صبري - محمد باقرين) &copy; 2026</div>
     </footer>
 
 </body>

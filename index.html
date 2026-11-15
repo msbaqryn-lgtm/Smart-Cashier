@@ -4,39 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سمارت كاشير | الرئيسية</title>
+    <meta name="description" content="حلول نقاط البيع المتكاملة: أجهزة كاشير وطابعات وبرمجيات مع التركيب والتدريب.">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="top">
 
-    <!-- شريط التنقل العلوي -->
     <header>
-        <div class="logo">
-            <h1>سمارت كاشير</h1>
+        <div class="header-inner">
+            <a class="logo" href="index.html"><span class="logo-icon">🧾</span><h1>سمارت كاشير</h1></a>
+            <input type="checkbox" id="menu-btn" class="sr" aria-label="فتح القائمة">
+            <label for="menu-btn" class="menu-toggle">☰</label>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">الرئيسية</a></li>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="pricing.html">الباقات والأسعار</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li><a href="demo.html" class="btn-demo">طلب عرض تجريبي</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">الرئيسية</a></li>
-                <li><a href="products.html">المنتجات</a></li>
-                <li><a href="pricing.html">الباقات والأسعار</a></li>
-                <li><a href="about.html">من نحن</a></li>
-                <li><a href="contact.html">اتصل بنا</a></li>
-                <li><a href="demo.html" class="btn-demo">طلب عرض تجريبي</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- القسم الرئيسي (واجهة الموقع) -->
-    <section class="hero">
-        <div class="hero-content">
-            <h2>حلول نقاط البيع المتكاملة لأعمالك</h2>
-            <p>أجهزة كاشير، طابعات فواتير، وأنظمة برمجية متطورة مع خدمات التركيب والتدريب.</p>
-            <a href="products.html" class="btn-primary">استكشف المنتجات</a>
-        </div>
-    </section>
+    <main id="main">
+        <section class="hero">
+            <div class="hero-content">
+                <span class="tag">🚀 نظام نقاط بيع عصري لمحلك</span>
+                <h2>حلول نقاط البيع المتكاملة لأعمالك</h2>
+                <p>أجهزة كاشير، طابعات فواتير، وأنظمة برمجية متطورة مع خدمات التركيب والتدريب والدعم الفني.</p>
+                <div class="hero-actions">
+                    <a href="products.html" class="btn-primary">استكشف المنتجات</a>
+                    <a href="demo.html" class="btn-outline">اطلب عرضاً تجريبياً</a>
+                </div>
+            </div>
+        </section>
 
-    <!-- تذييل الصفحة -->
+        <section class="stats container">
+            <div class="stats-grid">
+                <div class="stat"><strong>500+</strong><span>عميل راضٍ</span></div>
+                <div class="stat"><strong>1200+</strong><span>جهاز تم تركيبه</span></div>
+                <div class="stat"><strong>24/7</strong><span>دعم فني</span></div>
+                <div class="stat"><strong>5 سنوات</strong><span>خبرة في السوق</span></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>لماذا سمارت كاشير؟</h2>
+                    <p>كل ما يحتاجه محلك لإدارة المبيعات بسهولة وسرعة ودقة.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature"><div class="icon">⚡</div><h3>سرعة في المحاسبة</h3><p>واجهة لمس سلسة تختصر وقت الانتظار وتزيد رضا عملائك.</p></div>
+                    <div class="feature"><div class="icon">📦</div><h3>إدارة المخزون</h3><p>جرد دقيق وتنبيهات فورية عند اقتراب نفاد أي صنف.</p></div>
+                    <div class="feature"><div class="icon">📊</div><h3>تقارير الأرباح</h3><p>تقارير يومية وأسبوعية وشهرية تساعدك على اتخاذ القرار.</p></div>
+                    <div class="feature"><div class="icon">🧾</div><h3>الفوترة والضريبة</h3><p>فواتير احترافية ودعم كامل لضريبة القيمة المضافة (VAT).</p></div>
+                    <div class="feature"><div class="icon">🔐</div><h3>صلاحيات المستخدمين</h3><p>مدير، كاشير، ومحاسب، لكل منهم صلاحياته الخاصة.</p></div>
+                    <div class="feature"><div class="icon">🛠️</div><h3>تركيب وتدريب</h3><p>فريقنا يركّب النظام ويدرّب موظفيك حتى يتقنوه.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-title">
+                    <h2>كيف نعمل؟</h2>
+                    <p>أربع خطوات بسيطة وتبدأ البيع بنظام ذكي.</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step"><div class="num">1</div><h3>اطلب عرضاً</h3><p>املأ نموذج العرض التجريبي أو تواصل معنا.</p></div>
+                    <div class="step"><div class="num">2</div><h3>اختر الباقة</h3><p>نساعدك في اختيار الأجهزة والباقة المناسبة.</p></div>
+                    <div class="step"><div class="num">3</div><h3>التركيب</h3><p>نركّب الأجهزة ونهيّئ النظام ببيانات متجرك.</p></div>
+                    <div class="step"><div class="num">4</div><h3>التدريب والدعم</h3><p>ندرّب فريقك ونرافقك بدعم فني مستمر.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-title"><h2>آراء عملائنا</h2></div>
+                <div class="testi-grid">
+                    <div class="testi"><div class="stars">★★★★★</div><p>"النظام وفّر علينا وقتاً كبيراً في الجرد والمحاسبة، والدعم الفني سريع جداً."</p><h4>أحمد بن سالم</h4><small>صاحب سوبرماركت</small></div>
+                    <div class="testi"><div class="stars">★★★★★</div><p>"طابعة الفواتير وقارئ الباركود يعملان بكفاءة عالية، أنصح بهم بشدة."</p><h4>خالد باعباد</h4><small>صاحب مطعم</small></div>
+                    <div class="testi"><div class="stars">★★★★☆</div><p>"التقارير الشهرية ساعدتني أعرف أرباحي الحقيقية وأي الأصناف الأكثر مبيعاً."</p><h4>سعيد المحضار</h4><small>صاحب مكتبة</small></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-title"><h2>الأسئلة الشائعة</h2></div>
+                <div class="faq">
+                    <details><summary>هل أحتاج خبرة سابقة لاستخدام النظام؟</summary><p>لا، النظام سهل الاستخدام ونقدّم تدريباً كاملاً لموظفيك عند التركيب.</p></details>
+                    <details><summary>هل يعمل النظام بدون إنترنت؟</summary><p>نعم، العمليات الأساسية للبيع تعمل دون اتصال.</p></details>
+                    <details><summary>هل تتوفر ضمانات على الأجهزة؟</summary><p>جميع الأجهزة تأتي بضمان لمدة سنة مع خدمة الصيانة.</p></details>
+                    <details><summary>كيف أطلب عرضاً تجريبياً؟</summary><p>من صفحة طلب العرض التجريبي أو عبر واتساب والهاتف.</p></details>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>جاهز لتطوير محلك؟</h2>
+            <p>ابدأ اليوم مع سمارت كاشير واحصل على عرض تجريبي مجاني.</p>
+            <a href="demo.html" class="btn-light">اطلب العرض التجريبي</a>
+        </section>
+    </main>
+
+    <a class="whatsapp" href="https://wa.me/967779375534" target="_blank" rel="noopener" aria-label="واتساب">💬</a>
+    <a class="to-top" href="#top" aria-label="للأعلى">↑</a>
+
     <footer>
-        <p>تصميم وتطوير: مجموعة كود كرو (عمر صبري - محمد باقرين) &copy; 2026</p>
+        <div class="footer-grid">
+            <div><h4>🧾 سمارت كاشير</h4><p>حلول نقاط بيع متكاملة: أجهزة، طابعات، وبرمجيات مع التركيب والتدريب والدعم الفني.</p></div>
+            <div><h4>روابط سريعة</h4><ul><li><a href="index.html">الرئيسية</a></li><li><a href="products.html">المنتجات</a></li><li><a href="pricing.html">الباقات والأسعار</a></li><li><a href="about.html">من نحن</a></li><li><a href="contact.html">اتصل بنا</a></li></ul></div>
+            <div><h4>تواصل معنا</h4><ul><li>📍 تريم، حضرموت</li><li>📞 779375534 - 770206672</li><li>✉️ info@smartcashier.com</li></ul></div>
+        </div>
+        <div class="copyright">تصميم وتطوير: مجموعة كود كرو (عمر صبري - محمد باقرين) &copy; 2026</div>
     </footer>
 
 </body>
