@@ -3,111 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سمارت كاشير | الباقات والأسعار</title>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <title>سمارت كاشير | الباقات</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="top">
+<body>
 
     <header>
-        <div class="header-inner">
-            <a class="logo" href="index.html"><span class="logo-icon">🧾</span><h1>سمارت كاشير</h1></a>
-            <input type="checkbox" id="menu-btn" class="sr" aria-label="فتح القائمة">
-            <label for="menu-btn" class="menu-toggle">☰</label>
+        <div class="container header-box">
+            <a href="index.html" class="logo">سمارت كاشير</a>
             <nav>
                 <ul>
                     <li><a href="index.html">الرئيسية</a></li>
                     <li><a href="products.html">المنتجات</a></li>
-                    <li><a href="pricing.html" class="active">الباقات والأسعار</a></li>
+                    <li><a href="pricing.html" class="active">الباقات</a></li>
                     <li><a href="about.html">من نحن</a></li>
                     <li><a href="contact.html">اتصل بنا</a></li>
-                    <li><a href="demo.html" class="btn-demo">طلب عرض تجريبي</a></li>
+                    <li><a href="demo.html">عرض تجريبي</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main id="main">
-        <div class="page-banner">
-            <h2>باقات البرامج والخدمات</h2>
-            <p>خطط مرنة تناسب حجم أعمالك، مع دعم فني مستمر وتحديثات دورية.</p>
-        </div>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>باقات البرامج والخدمات</h1>
+                <p>خطط مرنة تناسب حجم أعمالك مع دعم فني مستمر.</p>
+            </div>
+        </section>
 
         <section class="section">
             <div class="container">
-                <input type="checkbox" id="billing" class="sr">
-                <div class="billing-toggle">
-                    <label for="billing">سنوي <span class="save-badge">وفّر حتى 21%</span></label>
-                    <label for="billing" class="slider" aria-label="تبديل سنوي / شهري"></label>
-                    <label for="billing">شهري</label>
-                </div>
-
-                <div class="pricing-grid">
-                    <div class="pricing-card">
+                <h2 class="section-title">اختر الباقة المناسبة</h2>
+                <div class="row">
+                    <div class="card">
                         <h3>الباقة الأساسية</h3>
-                        <div class="price"><span class="y"><b>99$</b> / سنوياً</span><span class="m"><b>10$</b> / شهرياً</span></div>
-                        <ul class="features">
+                        <div class="price">99$ / سنوياً</div>
+                        <ul class="list">
                             <li>نظام نقاط بيع (نقطة واحدة)</li>
                             <li>إدارة المنتجات الأساسية</li>
                             <li>تقارير مبيعات مبسطة</li>
                             <li>دعم فني عبر البريد الإلكتروني</li>
                         </ul>
-                        <a href="demo.html" class="btn-outline">اختر الباقة</a>
+                        <a href="demo.html" class="btn">اختر الباقة</a>
                     </div>
 
-                    <div class="pricing-card featured">
-                        <div class="badge">⭐ الأكثر طلباً</div>
+                    <div class="card">
                         <h3>الباقة الاحترافية</h3>
-                        <div class="price"><span class="y"><b>199$</b> / سنوياً</span><span class="m"><b>21$</b> / شهرياً</span></div>
-                        <ul class="features">
+                        <div class="price">199$ / سنوياً</div>
+                        <ul class="list">
                             <li>نظام نقاط بيع (حتى 3 نقاط)</li>
                             <li>إدارة المخزون المتقدمة</li>
                             <li>دعم ضريبة القيمة المضافة (VAT)</li>
                             <li>دعم فني متكامل 24/7</li>
                         </ul>
-                        <a href="demo.html" class="btn-primary">تجربة مجانية</a>
+                        <a href="demo.html" class="btn btn-orange">تجربة مجانية</a>
                     </div>
 
-                    <div class="pricing-card">
+                    <div class="card">
                         <h3>باقة الشركات</h3>
-                        <div class="price"><span class="y"><b>399$</b> / سنوياً</span><span class="m"><b>42$</b> / شهرياً</span></div>
-                        <ul class="features">
+                        <div class="price">399$ / سنوياً</div>
+                        <ul class="list">
                             <li>نقاط بيع غير محدودة</li>
                             <li>نظام محاسبي متكامل</li>
                             <li>ربط مع المتاجر الإلكترونية</li>
                             <li>مدير حساب شخصي مخصص</li>
                         </ul>
-                        <a href="contact.html" class="btn-outline">تواصل معنا</a>
+                        <a href="contact.html" class="btn">تواصل معنا</a>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="table-wrap">
-                    <table class="compare">
-                        <thead><tr><th>الميزة</th><th>الأساسية</th><th>الاحترافية</th><th>الشركات</th></tr></thead>
-                        <tbody>
-                            <tr><td>عدد نقاط البيع</td><td>1</td><td>3</td><td>غير محدود</td></tr>
-                            <tr><td>إدارة المخزون</td><td>أساسية</td><td>متقدمة</td><td>متقدمة</td></tr>
-                            <tr><td>ضريبة القيمة المضافة</td><td>—</td><td>✓</td><td>✓</td></tr>
-                            <tr><td>التقارير</td><td>مبسطة</td><td>تفصيلية</td><td>تفصيلية + محاسبية</td></tr>
-                            <tr><td>الدعم الفني</td><td>بريد إلكتروني</td><td>24/7</td><td>مدير حساب</td></tr>
-                            <tr><td>ربط المتاجر الإلكترونية</td><td>—</td><td>—</td><td>✓</td></tr>
-                        </tbody>
-                    </table>
-                </div>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">مقارنة الباقات</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>الميزة</th>
+                            <th>الأساسية</th>
+                            <th>الاحترافية</th>
+                            <th>الشركات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>عدد نقاط البيع</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>غير محدود</td>
+                        </tr>
+                        <tr>
+                            <td>إدارة المخزون</td>
+                            <td>أساسية</td>
+                            <td>متقدمة</td>
+                            <td>متقدمة</td>
+                        </tr>
+                        <tr>
+                            <td>ضريبة القيمة المضافة</td>
+                            <td>لا</td>
+                            <td>نعم</td>
+                            <td>نعم</td>
+                        </tr>
+                        <tr>
+                            <td>التقارير</td>
+                            <td>مبسطة</td>
+                            <td>تفصيلية</td>
+                            <td>تفصيلية ومحاسبية</td>
+                        </tr>
+                        <tr>
+                            <td>الدعم الفني</td>
+                            <td>بريد إلكتروني</td>
+                            <td>24/7</td>
+                            <td>مدير حساب</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
     </main>
 
-    <a class="whatsapp" href="https://wa.me/967779375534" target="_blank" rel="noopener" aria-label="واتساب">💬</a>
-    <a class="to-top" href="#top" aria-label="للأعلى">↑</a>
-
     <footer>
-        <div class="footer-grid">
-            <div><h4>🧾 سمارت كاشير</h4><p>حلول نقاط بيع متكاملة: أجهزة، طابعات، وبرمجيات مع التركيب والتدريب والدعم الفني.</p></div>
-            <div><h4>روابط سريعة</h4><ul><li><a href="index.html">الرئيسية</a></li><li><a href="products.html">المنتجات</a></li><li><a href="pricing.html">الباقات والأسعار</a></li><li><a href="about.html">من نحن</a></li><li><a href="contact.html">اتصل بنا</a></li></ul></div>
-            <div><h4>تواصل معنا</h4><ul><li>📍 تريم، حضرموت</li><li>📞 779375534 - 770206672</li><li>✉️ info@smartcashier.com</li></ul></div>
+        <div class="container">
+            <p>سمارت كاشير - تريم، حضرموت | الهاتف: 779375534</p>
+            <p>تصميم وتطوير: مجموعة كود كرو (عمر صبري - محمد باقرين) &copy; 2026</p>
         </div>
-        <div class="copyright">تصميم وتطوير: مجموعة كود كرو (عمر صبري - محمد باقرين) &copy; 2026</div>
     </footer>
 
 </body>

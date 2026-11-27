@@ -4,85 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سمارت كاشير | اتصل بنا</title>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="top">
+<body>
 
     <header>
-        <div class="header-inner">
-            <a class="logo" href="index.html"><span class="logo-icon">🧾</span><h1>سمارت كاشير</h1></a>
-            <input type="checkbox" id="menu-btn" class="sr" aria-label="فتح القائمة">
-            <label for="menu-btn" class="menu-toggle">☰</label>
+        <div class="container header-box">
+            <a href="index.html" class="logo">سمارت كاشير</a>
             <nav>
                 <ul>
                     <li><a href="index.html">الرئيسية</a></li>
                     <li><a href="products.html">المنتجات</a></li>
-                    <li><a href="pricing.html">الباقات والأسعار</a></li>
+                    <li><a href="pricing.html">الباقات</a></li>
                     <li><a href="about.html">من نحن</a></li>
                     <li><a href="contact.html" class="active">اتصل بنا</a></li>
-                    <li><a href="demo.html" class="btn-demo">طلب عرض تجريبي</a></li>
+                    <li><a href="demo.html">عرض تجريبي</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main id="main">
-        <div class="page-banner"><h2>تواصل معنا</h2><p>نحن هنا لمساعدتك، وسنرد عليك في أقرب وقت.</p></div>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>تواصل معنا</h1>
+                <p>نحن هنا لمساعدتك والإجابة عن جميع استفساراتك.</p>
+            </div>
+        </section>
 
         <section class="section">
             <div class="container">
-                <div class="contact-container">
-                    <div class="contact-info">
-                        <h3>معلومات الاتصال</h3>
-                        <p><strong>📍 العنوان:</strong> تريم، محافظة حضرموت</p>
-                        <p><strong>📞 الهاتف:</strong> <a href="tel:+967779375534">779375534</a> - <a href="tel:+967770206672">770206672</a></p>
-                        <p><strong>💬 واتساب:</strong> <a href="https://wa.me/967779375534" target="_blank" rel="noopener">راسلنا الآن</a></p>
-                        <p><strong>✉️ البريد:</strong> <a href="mailto:info@smartcashier.com">info@smartcashier.com</a></p>
-                        <p><strong>🕒 أوقات العمل:</strong> الأحد - الخميس (8:00 صباحاً - 5:00 مساءً)</p>
+                <h2 class="section-title">معلومات الاتصال</h2>
+                <div class="row">
+                    <div class="card">
+                        <h3>العنوان</h3>
+                        <p>تريم، محافظة حضرموت</p>
                     </div>
-
-                    <div class="form-box form-box--success">
-                        <p id="thanks" class="thanks">✅ تم استلام رسالتك، سنرد عليك قريبًا.</p>
-                        <form action="#thanks" method="get">
-                            <div class="form-group">
-                                <label for="contact-name">الاسم الكامل</label>
-                                <input type="text" id="contact-name" name="name" placeholder="أدخل اسمك" minlength="3" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-email">البريد الإلكتروني</label>
-                                <input type="email" id="contact-email" name="email" placeholder="example@email.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-subject">موضوع الرسالة</label>
-                                <input type="text" id="contact-subject" name="subject" placeholder="عن ماذا تستفسر؟" minlength="3" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-message">الرسالة</label>
-                                <textarea id="contact-message" name="message" rows="5" placeholder="اكتب رسالتك هنا..." minlength="10" required></textarea>
-                            </div>
-                            <button type="submit" class="btn-primary btn-submit">إرسال الرسالة</button>
-                        </form>
+                    <div class="card">
+                        <h3>الهاتف</h3>
+                        <p>779375534 - 770206672</p>
+                    </div>
+                    <div class="card">
+                        <h3>البريد الإلكتروني</h3>
+                        <p>info@smartcashier.com</p>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="map-box">
-                    <iframe title="موقعنا على الخريطة" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=49.0%2C16.0%2C49.1%2C16.1&amp;layer=mapnik"></iframe>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">أرسل لنا رسالة</h2>
+                <div class="form-box">
+                    <form action="#" method="post">
+                        <label for="name">الاسم الكامل</label>
+                        <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+                        <label for="subject">موضوع الرسالة</label>
+                        <input type="text" id="subject" name="subject" placeholder="عن ماذا تستفسر؟" required>
+
+                        <label for="message">الرسالة</label>
+                        <textarea id="message" name="message" rows="4" placeholder="اكتب رسالتك هنا..." required></textarea>
+
+                        <button type="submit" class="btn">إرسال الرسالة</button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <a class="whatsapp" href="https://wa.me/967779375534" target="_blank" rel="noopener" aria-label="واتساب">💬</a>
-    <a class="to-top" href="#top" aria-label="للأعلى">↑</a>
-
     <footer>
-        <div class="footer-grid">
-            <div><h4>🧾 سمارت كاشير</h4><p>حلول نقاط بيع متكاملة: أجهزة، طابعات، وبرمجيات مع التركيب والتدريب والدعم الفني.</p></div>
-            <div><h4>روابط سريعة</h4><ul><li><a href="index.html">الرئيسية</a></li><li><a href="products.html">المنتجات</a></li><li><a href="pricing.html">الباقات والأسعار</a></li><li><a href="about.html">من نحن</a></li><li><a href="contact.html">اتصل بنا</a></li></ul></div>
-            <div><h4>تواصل معنا</h4><ul><li>📍 تريم، حضرموت</li><li>📞 779375534 - 770206672</li><li>✉️ info@smartcashier.com</li></ul></div>
+        <div class="container">
+            <p>سمارت كاشير - تريم، حضرموت | الهاتف: 779375534</p>
+            <p>تصميم وتطوير: مجموعة كود كرو (عمر صبري - محمد باقرين) &copy; 2026</p>
         </div>
-        <div class="copyright">تصميم وتطوير: مجموعة كود كرو (عمر صبري - محمد باقرين) &copy; 2026</div>
     </footer>
 
 </body>

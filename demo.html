@@ -3,81 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سمارت كاشير | طلب عرض تجريبي</title>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <title>سمارت كاشير | عرض تجريبي</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="top">
+<body>
 
     <header>
-        <div class="header-inner">
-            <a class="logo" href="index.html"><span class="logo-icon">🧾</span><h1>سمارت كاشير</h1></a>
-            <input type="checkbox" id="menu-btn" class="sr" aria-label="فتح القائمة">
-            <label for="menu-btn" class="menu-toggle">☰</label>
+        <div class="container header-box">
+            <a href="index.html" class="logo">سمارت كاشير</a>
             <nav>
                 <ul>
                     <li><a href="index.html">الرئيسية</a></li>
                     <li><a href="products.html">المنتجات</a></li>
-                    <li><a href="pricing.html">الباقات والأسعار</a></li>
+                    <li><a href="pricing.html">الباقات</a></li>
                     <li><a href="about.html">من نحن</a></li>
                     <li><a href="contact.html">اتصل بنا</a></li>
-                    <li><a href="demo.html" class="btn-demo">طلب عرض تجريبي</a></li>
+                    <li><a href="demo.html" class="active">عرض تجريبي</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main id="main">
-        <div class="page-banner"><h2>اطلب عرضاً تجريبياً الآن</h2><p>املأ النموذج وسيتواصل معك فريقنا لتحديد موعد لتجربة النظام.</p></div>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>اطلب عرضاً تجريبياً الآن</h1>
+                <p>املأ النموذج وسيتواصل معك فريقنا لتحديد موعد لتجربة النظام.</p>
+            </div>
+        </section>
 
         <section class="section">
             <div class="container">
                 <div class="form-box">
-                    <p id="thanks" class="thanks">✅ تم استلام طلبك، سيتواصل معك فريق المبيعات قريباً.</p>
-                    <form action="#thanks" method="get">
-                        <div class="form-group">
-                            <label for="name">الاسم الكامل</label>
-                            <input type="text" id="name" name="name" placeholder="أدخل اسمك الثلاثي" minlength="3" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">البريد الإلكتروني</label>
-                            <input type="email" id="email" name="email" placeholder="example@email.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">رقم الهاتف</label>
-                            <input type="tel" id="phone" name="phone" placeholder="أدخل رقم هاتفك للتواصل" pattern="[0-9+ ]{7,15}" title="أرقام فقط (من 7 إلى 15 رقماً)" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="service">الخدمة المطلوبة</label>
-                            <select id="service" name="service" required>
-                                <option value="" disabled selected hidden>-- اختر الخدمة أو الباقة --</option>
-                                <option value="basic">الباقة الأساسية (99$)</option>
-                                <option value="pro">الباقة الاحترافية (199$)</option>
-                                <option value="enterprise">باقة الشركات (399$)</option>
-                                <option value="hardware">أجهزة الكاشير وملحقاتها</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">ملاحظات إضافية</label>
-                            <textarea id="message" name="message" rows="4" placeholder="هل لديك أي استفسارات أو متطلبات خاصة بنشاطك التجاري؟"></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary btn-submit">إرسال الطلب</button>
+                    <form action="#" method="post">
+                        <label for="name">الاسم الكامل</label>
+                        <input type="text" id="name" name="name" placeholder="أدخل اسمك الثلاثي" required>
+
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+                        <label for="phone">رقم الهاتف</label>
+                        <input type="tel" id="phone" name="phone" placeholder="أدخل رقم هاتفك للتواصل" required>
+
+                        <label for="service">الخدمة المطلوبة</label>
+                        <select id="service" name="service" required>
+                            <option value="">-- اختر الخدمة أو الباقة --</option>
+                            <option value="basic">الباقة الأساسية (99$)</option>
+                            <option value="pro">الباقة الاحترافية (199$)</option>
+                            <option value="enterprise">باقة الشركات (399$)</option>
+                            <option value="hardware">أجهزة الكاشير وملحقاتها</option>
+                        </select>
+
+                        <label for="message">ملاحظات إضافية</label>
+                        <textarea id="message" name="message" rows="4" placeholder="اكتب أي استفسارات أو متطلبات خاصة بنشاطك التجاري"></textarea>
+
+                        <button type="submit" class="btn">إرسال الطلب</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <a class="whatsapp" href="https://wa.me/967779375534" target="_blank" rel="noopener" aria-label="واتساب">💬</a>
-    <a class="to-top" href="#top" aria-label="للأعلى">↑</a>
-
     <footer>
-        <div class="footer-grid">
-            <div><h4>🧾 سمارت كاشير</h4><p>حلول نقاط بيع متكاملة: أجهزة، طابعات، وبرمجيات مع التركيب والتدريب والدعم الفني.</p></div>
-            <div><h4>روابط سريعة</h4><ul><li><a href="index.html">الرئيسية</a></li><li><a href="products.html">المنتجات</a></li><li><a href="pricing.html">الباقات والأسعار</a></li><li><a href="about.html">من نحن</a></li><li><a href="contact.html">اتصل بنا</a></li></ul></div>
-            <div><h4>تواصل معنا</h4><ul><li>📍 تريم، حضرموت</li><li>📞 779375534 - 770206672</li><li>✉️ info@smartcashier.com</li></ul></div>
+        <div class="container">
+            <p>سمارت كاشير - تريم، حضرموت | الهاتف: 779375534</p>
+            <p>تصميم وتطوير: مجموعة كود كرو (عمر صبري - محمد باقرين) &copy; 2026</p>
         </div>
-        <div class="copyright">تصميم وتطوير: مجموعة كود كرو (عمر صبري - محمد باقرين) &copy; 2026</div>
     </footer>
 
 </body>
